@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.calculator {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #fa18c9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.display {
+  height: 100px;
+  background: #3806eb;
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.input {
+  font-size: 1.5rem;
+  word-wrap: break-word;
+}
+
+.output {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2rem;
+  background: #0af31d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0ab6eb;
+}
+
+
+
+
+.history {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.history h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history li p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+
+.d-btn {
+  background-color: #ff6666;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.d-btn:hover {
+  background-color: #ff4d4d;
+}
+
+.d-btn:active {
+  background-color: #ff3333;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .buttons button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .history li p {
+    font-size: 0.9rem;
+  }
+}
