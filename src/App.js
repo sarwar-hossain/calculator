@@ -8,7 +8,6 @@ const App = () => {
     const saveHistory = localStorage.getItem("history");
     return saveHistory ? JSON.parse(saveHistory) : [];
   });
-  const [theme, setTheme] = useState("light");
 
   const handleClick = (value) => {
     setInput(input + value);
