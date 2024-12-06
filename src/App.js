@@ -74,7 +74,7 @@ const App = () => {
           <div className="output">{result}</div>
         </div>
         <div className="buttons">
-        <button onClick={() => handleClick("(")}>(</button>
+          <button onClick={() => handleClick("(")}>(</button>
           <button onClick={() => handleClick(")")}>)</button>
           <button onClick={() => handleClick("%")}>%</button>
           <button onClick={clearInput}>AC</button>
