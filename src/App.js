@@ -40,21 +40,7 @@ const App = () => {
     localStorage.setItem("history", JSON.stringify(history));
   }, [history]);
 
-  useEffect(() => {
-    const handleKeyPress = (e) => {
-      const allowedKeys = "0123456789+-*/.()%";
-      if (allowedKeys.includes(e.key)) {
-        setInput(input + e.key);
-      } else if (e.key === "Enter") {
-        calculateResult();
-      } else if (e.key === "Backspace") {
-        backspace();
-      }
-    };
 
-    window.addEventListener("keydown", handleKeyPress);
-    return () => window.removeEventListener("keydown", handleKeyPress);
-  }, [input]);
 
   const deleteHistory = (index) => {
     setHistory(history.filter((_, i) => i !== index));
